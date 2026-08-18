@@ -1,26 +1,47 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Colores */
+  --color-canvas: #0a0a0a;
+  --color-surface: #181818;
+
+  --color-brand: #f3cd4f;
+  --color-brand-hover: #ffdc60;
+  --color-brand-ink: #2b271b;
+
+  --color-heading: #ece9e4;
+  --color-copy: #d7d0c3;
+  --color-soft: #c5bcad;
+  --color-muted: #b8af9f;
+  --color-tab: #aaa194;
+  --color-placeholder: #938b80;
+  --color-line: #786f60;
+  --color-footer: #9a9185;
+
+  /* Tipografía específica del diseño */
+  --text-brand-title: 1.7rem;
+  --text-micro: 0.65rem;
+
+  /* Letter spacing */
+  --tracking-brand: 0.14em;
+  --tracking-subtitle: 0.08em;
+  --tracking-heading: 0.03em;
+  --tracking-action: 0.12em;
+  --tracking-footer: 0.06em;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  min-height: 100%;
+  background-color: var(--color-canvas);
+  color: var(--color-copy);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), sans-serif;
 }
