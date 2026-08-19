@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Barbería 💈
 
-## Getting Started
+Aplicación web para gestionar una barbería: agenda de citas y catálogo de servicios.
 
-First, run the development server:
+## ✨ Características
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 📅 Agenda de citas para clientes.
+- 💇‍♂️ Visualización de los servicios ofrecidos.
+- 🗄️ Persistencia de datos en Supabase.
+- ⚡ Interfaz rápida y responsive con Tailwind CSS.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tecnologías
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Next.js 16](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Supabase](https://supabase.com/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📋 Requisitos previos
 
-## Learn More
+- Node.js 18 o superior.
+- Una cuenta y proyecto en [Supabase](https://supabase.com/).
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Instalación
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clona el repositorio:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   git clone <url-del-repositorio>
+   cd Barberia
+   ```
 
-## Deploy on Vercel
+2. Instala las dependencias:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Configura las variables de entorno creando un archivo `.env.local`:
+
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=tu-supabase-url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=tu-supabase-anon-key
+   ```
+
+4. Inicia el servidor de desarrollo:
+
+   ```bash
+   npm run dev
+   ```
+
+   Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
+
+## 🎯 Objetivo
+
+Proyecto de práctica para aprender y mejorar el uso de Next.js 16, Tailwind CSS, Supabase y TypeScript.
+
+## 📄 Licencia
+
+Este proyecto es solo con fines educativos.
