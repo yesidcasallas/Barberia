@@ -12,49 +12,25 @@ export function PasswordField() {
             <div className="flex items-center justify-between gap-4">
                 <label
                     htmlFor="password"
-                    className="
-            text-xs font-bold
-            tracking-[0.08em]
-            text-[#c5bcad]
-          "
+                    className="text-xs font-bold tracking-subtitle text-soft"
                 >
                     Contraseña
                 </label>
 
                 <Link
                     href="/forgot-password"
-                    className="
-            text-[0.65rem]
-            font-semibold
-            text-[#f3cd4f]
-
-            hover:text-[#ffdf6b]
-
-            focus-visible:outline-2
-            focus-visible:outline-offset-4
-            focus-visible:outline-[#f3cd4f]
-          "
+                    className="text-micro font-semibold text-brand transition-colors hover:text-brand-hover focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand"
                 >
                     ¿Olvidaste tu contraseña?
                 </Link>
             </div>
 
-            <div
-                className="
-          relative mt-3
-          border-b border-[#655d4d]
-          focus-within:border-[#f3cd4f]
-        "
-            >
+            <div className="relative mt-3 border-b border-line transition-colors focus-within:border-brand">
                 <LockKeyhole
                     aria-hidden="true"
                     size={19}
                     strokeWidth={1.8}
-                    className="
-            absolute left-0 top-1/2
-            -translate-y-1/2
-            text-[#b8af9f]
-          "
+                    className="absolute left-0 top-1/2 -translate-y-1/2 text-muted"
                 />
 
                 <input
@@ -64,16 +40,7 @@ export function PasswordField() {
                     autoComplete="current-password"
                     placeholder="••••••••"
                     required
-                    className="
-            w-full bg-transparent
-            py-3 pr-11 pl-8
-            text-sm text-[#ece9e4]
-            outline-none
-
-            placeholder:text-[#716c64]
-
-            focus-visible:outline-none
-          "
+                    className="w-full bg-transparent py-3 pr-11 pl-8 text-sm text-heading outline-none placeholder:text-placeholder focus-visible:outline-none"
                 />
 
                 <button
@@ -85,18 +52,7 @@ export function PasswordField() {
                             : "Mostrar contraseña"
                     }
                     aria-pressed={showPassword}
-                    className="
-            absolute right-0 top-1/2
-            -translate-y-1/2
-            cursor-pointer
-            p-2 text-[#b8af9f]
-
-            transition-colors
-            hover:text-[#f3cd4f]
-
-            focus-visible:outline-2
-            focus-visible:outline-[#f3cd4f]
-                "
+                    className="absolute right-0 top-1/2 -translate-y-1/2 cursor-pointer p-2 text-muted transition-colors hover:text-brand focus-visible:outline-2 focus-visible:outline-brand"
                 >
                     {showPassword ? (
                         <Eye
