@@ -1,8 +1,13 @@
+import Header from "@/components/header/header";
+import Footer from "@/components/footer/footer";
+import HeroSection from "@/components/secctions/heroSection"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Hola mundo</h1>
-    </main>
+    <>
+      <Header />
+      < HeroSection />
+      <Footer />
+    </>
   );
 }
