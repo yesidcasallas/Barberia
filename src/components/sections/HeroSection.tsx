@@ -28,7 +28,7 @@ export default function HeroSection() {
 
                 <div
                     aria-hidden="true"
-                    className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
+                    className="absolute inset-x-0 bottom-0 h-2/3 g-linear-to-t from-black/80 via-black/20 to-transparent"
                 />
 
                 <div
