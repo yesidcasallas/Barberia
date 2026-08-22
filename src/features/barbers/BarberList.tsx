@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import type { BarberCartData } from './types/barber-cart';
 import { ArrowUpRight, Star } from 'lucide-react';
@@ -55,10 +56,9 @@ export default function BarberList({ barbers }: BarberCardProps) {
                   className="group flex h-full flex-col bg-white/2 transition-colors duration-300 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-amber-400"
                 >
                   <div className="relative aspect-4/5 overflow-hidden bg-[#141818]">
-                    <img
+                    <Image
                       src={barber.imageUrl}
                       alt={barber.imageAlt}
-                      loading="lazy"
                       decoding="async"
                       className="h-full w-full object-cover grayscale transition duration-500 group-hover:scale-[1.025] group-hover:grayscale-0 motion-reduce:transform-none"
                     />
